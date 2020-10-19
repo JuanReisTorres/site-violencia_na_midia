@@ -1,0 +1,22 @@
+	#nome, #idade, #email, #estado, #sexo {
+		position:absolute;
+		left: 160px;
+		width: 300px;
+	}
+
+	fieldset{
+		background: white;
+		font-family:Verdana, Geneva, sans-serif;
+	}
+	fieldset legend{
+		font-size: 30px;
+		font-family: 'Sansita Swashed', cursive;
+	}
+
+	input[type="submit"], input[type="reset"]{
+		width: 100%;
+		margin-bottom: 5px;
+		padding: 15px;
+		cursor: pointer;
+		font-size: 15px;
+	}

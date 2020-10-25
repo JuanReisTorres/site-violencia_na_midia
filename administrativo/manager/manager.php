@@ -1,5 +1,6 @@
 <?php
-
+    session_start();
+    if(isset($_SESSION['logado'])){
     //Mexer nos voltar pagina quando mexer nos status
     include("../../bd/conectar.php");
     $analise = "select * from depoimentos where depstatus='0'";
@@ -70,6 +71,8 @@
 
         }
     }
-
+    }else{
+        echo "Acesso negado! Você só pode fazer isso logado";
+    }
     $conexao -> close();
 ?>

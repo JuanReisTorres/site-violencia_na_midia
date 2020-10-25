@@ -6,3 +6,4 @@ A proposta era o desenvolvimento de um website com o tema "Violência na Mídia"
     - (15/10/2020) Análise de viabilidade de propostas.
     - (17/10/2020) Começo do desenvolvimento do sistema de paginação dos depoimentos, desenvolvimento da página para verificar a situação do depoimento (estava com pequenos erros).
     - (17/10/2020) Começo do desenvolvimento frontend (análise de propostas).
+    - (25/10/2020) Desenvolvimento inicial do sistema administrativo.

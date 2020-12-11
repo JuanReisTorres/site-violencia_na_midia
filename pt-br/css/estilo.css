@@ -1,0 +1,723 @@
+
+/*Zerando o body*/
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Dando formataÃ§Ã£o ao footer*/
+footer{
+    padding-top: 20px;
+    background: #3d3d3d;
+}
+
+/*Importando fontes */
+@charset "UTF-8"; 
+@font-face {
+    font-family: 'lemon_milkbold';
+    src: url('fontes/lemonmilk-bold-webfont.woff2') format('woff2'),
+         url('fontes/lemonmilk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lemon_milklight';
+    src: url('fontes/lemonmilk-light-webfont.woff2') format('woff2'),
+         url('fontes/lemonmilk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: 'lemon_milklight';
+}
+
+/*================================================*/
+/*Class footer para alinhar os elementos do footer*/
+.footer{
+    color: white;
+    text-align: center;
+}
+
+.footerflex{
+    display: flex;
+    justify-content: center;
+}
+
+.menufooter a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.menufooter li{
+    margin-top: 10px;
+    padding: 10px;
+    background: black;
+    border-radius: 15px;
+    text-decoration: underline;
+}
+.footermenutitulo{
+    font-size: 25px;
+}
+
+.pedacinho{
+    text-align: center;
+    color: white;
+    background: #303030;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*PÃGINAS TITULO*/
+.pagename{
+    background: black;
+    border-radius: 15px;
+    color: white;
+}
+.paginatitulo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid #ff6a5f;
+    border-bottom: 2px solid #ff6a5f;
+    background: black;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+/*================================================*/
+/* LOGO + NAVBAR */
+.logo{
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 3%;
+    position: absolute;
+}
+
+.navbar{
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.navimage{
+    display: flex;
+    justify-content: center;
+}
+.iconmenu{
+    width: 60px;
+}
+
+.navbar .menugeral{
+    margin-left: 53%;
+    text-align: center;
+    display: flex;
+    list-style: none;
+}
+
+
+.navbar .menugeral li{
+    margin-left: 30px;
+}
+
+.navbar .menugeral li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .menugeral li a:hover{
+    color: red;
+}
+
+.navbar .menugeral .submenugeral{
+    position: absolute;
+    visibility: hidden;
+}
+
+.navbar .menugeral .submenugeral li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .menugeral .submenugeral li a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+
+.navbar .menugeral .submenugeral li{
+    width: 80%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 8px;
+    padding: 8px;
+    background: white;
+    font-style: none;
+    list-style: none;
+    border: 5px solid #e9e9e9;
+    border-radius: 15px;
+}
+
+
+.navbar .menugeral li:hover .submenugeral{
+    visibility: visible;
+}
+
+
+/*================================================*/
+
+/* INDEX - WEB */
+
+.articleindex{
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+    height: 649px;
+    background-color: black;
+}
+
+.tituloindex{
+    font-size: 70px;
+    margin-top: 60px;
+    color: white;
+    text-shadow: 2px 2px #ff6a5f; /*FicarÃ¡ para os textos das paginas*/
+}
+
+.subtituloindex{
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+.subtituloindex a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ff6a5f;
+    border-radius: 15px;
+}
+
+.img-anonymous{
+    margin-top: 45px;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+}
+
+.anonymous{
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    opacity: 0.5;
+    top: -26px;
+    margin-right: 35px;
+    transition: ease 3s;
+}
+.peopleindex{
+    margin-top: 16px;
+    position: absolute;
+    z-index: 3;
+    transition: ease 1s;
+}
+
+/*V2 */
+
+.tentardnv{
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.tentardnv2{
+    text-decoration: none;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.imgconteudo{
+    display: flex;
+    justify-content: center;
+}
+
+/* FORMULÃRIO - WEB */
+.articleform{
+    background-image: url('../images/galeria/fundo-form.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.semifundo{
+    background-color: rgb(0, 0, 0, 0.55); /*75 */
+}
+.articleform form{
+    padding-top: 2%;
+    width: 600px;
+    margin-left: 30%;
+}
+.articleform form #nome, .articleform form #idade, .articleform form #email, .articleform form #estado, .articleform form #sexo {
+	position:absolute;
+	left: 640px;
+	width: 300px;
+}
+
+.articleform form fieldset{
+	background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+	font-family:Verdana, Geneva, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px gray;
+
+}
+.articleform form fieldset legend{
+    padding: 10px;
+    font-size: 20px;
+    background: white;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 15px;
+    color: black;
+	font-family: 'arial;
+}
+
+.articleform form input[type="submit"], .articleform input[type="reset"]{
+	margin-bottom: 5px;
+	padding: 15px;
+	cursor: pointer;
+	font-size: 15px;
+    margin-left: 10px;
+}
+
+
+.formsend{
+    padding-top:20px;
+    padding-bottom:200px;
+    margin-top: 0;
+    background: black;
+    color: white;
+    font-family: arial;
+}
+
+.formsend h1{
+    font-size: 60px;
+    margin-left: 15px;
+}
+
+.formsend p{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+/* MOSTRAR DEPOIMENTOS */
+
+.depoimentobox{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.depoimento{
+    height: 300px;
+    background: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid #ff6a5f;
+    border-radius: 10px;
+    width: 300px;
+    word-wrap: break-word;
+    font-family: arial;
+
+}
+
+.depoimento a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    background: black;
+    border: 5px groove #ff6a5f;
+    border-radius: 15px;
+    color: white;
+    text-shadow: 1px 1px #ff6a5f;
+}
+.deperror{
+    margin-left: 10px;
+}
+.paginanumero{
+    margin-left: 13px;
+    color: white;
+}
+
+.data{
+    display: flex;
+    font-size: 15px;
+    justify-content: center; 
+    
+}
+.verdepcompleto{
+    display: flex;
+    margin-top: 30%;
+    justify-content: center;
+
+}
+
+.textodep{
+    
+}
+
+.depoimentoarticle{
+    background-image: url('../images/galeria/fundo-verdeps.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linksproximapagina{
+    display: flex;
+    justify-content: center;
+}
+.linksproximapagina a{
+    margin-left: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    background: black;
+    border-radius: 15px;
+}
+
+.linksproximapagina a:hover{
+    color: blue;
+}
+
+.textoproximapagina{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.textoproximapagina a{
+    margin-left: 13px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.depnextpage{
+    padding: 15px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.textoproximapagina a:hover{
+    color: blue;
+}
+
+/*VER DEP UNICO*/
+.verdep{
+    margin-left: 10px;
+}
+
+.verdepresult{
+    margin-left: 10px;
+    font-family: arial;
+}
+
+
+/* PÃGINAS */
+.slidebutton{
+    display: flex;
+    justify-content: center;
+}
+.slidebutton a{
+    margin-right: 10px;
+}
+
+.boxtextopage{
+    font-family: arial;
+    background: white;
+    word-wrap: break-word;
+    line-height: 20px;
+}
+
+.shadowconteudopage{
+    /*min-height: 70vh; -> Rever*/
+    padding-top: 30px;
+    width: 100%;
+    background-image: url(../images/galeria/fundo-conteudo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    word-wrap: break-word;
+}
+
+.shadowboxtextopage{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+    border: 1px solid black;
+    width: 800px;
+    background: white;
+}
+
+.shadowboxtextopagedep{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+    border: 1px solid black;
+    background: white;   
+    margin-bottom: 200px;
+    word-wrap: break-word;
+    width: 600px;
+}
+
+.shadowboxtextopagedep input[type='number']{
+    width: 200px;
+    height: 40px;
+}
+
+.shadowboxtextopagedep h1{
+    font-size: 35px;
+}
+.boxtextopagefim{
+    height: 650px;
+}
+
+
+.textopagetitulo{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.textopage{
+    text-align: center;
+    font-size: 20px;
+    font-family: arial;
+}
+
+.textopagebox{
+    width: 500px;
+    word-wrap: break-word;
+}
+
+.textopage a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.textopage a:hover{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+.galeriaflex{
+    display: flex;
+    justify-content: center;
+        flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+}
+
+.galeriaflex li{
+    margin-left: 15px;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 15px;
+    background: white;
+    margin-top: 15px;
+}
+
+/*SEGURANCA*/
+
+.segboxtextopage{
+    margin-top: 3%;
+    height: 330px;
+    background: white;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.sanfona{
+    text-align: center;
+}
+
+
+.pergunta1, .pergunta2, .pergunta3, .pergunta4{
+    margin-bottom: 15px;
+    width: 300px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    padding: 5px;
+    transition: ease 1s;
+}
+
+.resposta1, .resposta2, .resposta3, .resposta4{
+    padding-top: 15px;
+    margin: 15px;
+    visibility: hidden;
+    height: 0;
+    background: white;
+    color: black;
+    font-family: arial;
+}
+
+.pergunta1:hover .resposta1,
+.pergunta2:hover .resposta2,
+.pergunta3:hover .resposta3,
+.pergunta4:hover .resposta4
+{
+    visibility: visible;
+    height: 100px;
+    transition: ease 1s;
+}
+
+.titlesec{
+    padding-top: 10px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+/*LOGIN PAINEL*/
+.loginpainel{
+    text-align: center;
+    color: white;
+    background: black;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.ademirpainel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+.loginpainel input[type=submit]{
+    height: 30px;
+    width: 300px;
+}
+
+.loginpainel input[type=email], .loginpainel input[type=password]{
+    width: 300px;
+    
+}
+
+.loginpainel label{
+    
+}
+
+/*PAINEL*/
+.articlepainel{
+    padding-top:20px;
+    padding-bottom:160px;
+    margin-top: 0;
+    background: black;
+    color: white;
+}
+
+.articlepainelprincipal{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    padding-bottom:160px;
+    margin-top: 0;
+    background: black;
+    color: white;
+}
+
+.articlepainel p{
+    font-size: 30px;
+}
+.articlepainel ul{
+    list-style: none;
+    color: white;
+    font-size: 30px;
+}
+
+.articlepainel a{
+    color: white;
+    text-decoration: none;
+}
+
+.articlepainel label{
+    font-size: 30px;
+}
+
+.resultado_container{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: arial;
+    background: black;
+}
+
+.resultado_sql{
+    word-wrap: break-word;
+    width: 300px;
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+
+
+.resultado_h1{
+    text-align: center;
+}
+
+.painelprincipal{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background: white;
+    width: 600px;
+    color: black;
+    font-size: 30px;
+}
+
+.painelprincipal a{
+    text-decoration: none;
+}
+
+.listaropcao{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.listaropcao a{
+    margin-bottom: 20px;
+}

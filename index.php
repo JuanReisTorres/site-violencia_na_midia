@@ -9,7 +9,7 @@
             header('location: pt-br/');
             break;
         default:
-			header('location: en-us/');
+	    header('location: en-us/');
             break;
     }
 ?>
